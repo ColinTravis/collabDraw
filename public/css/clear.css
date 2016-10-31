@@ -1,5 +1,6 @@
 body, html {
     box-sizing: border-box;
+    background-color: #42A5F5;
 }
 
 .flexmain {
@@ -46,7 +47,7 @@ body, html {
   text-align: center;
   margin: 15px 0 -10px 0;
   padding: 0;
-  color: #808080;
+  color: #ecf0f1;
 }
 
 button {

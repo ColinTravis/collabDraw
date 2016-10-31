@@ -1,5 +1,6 @@
 body, html {
   box-sizing: border-box;
+  background-color: #90A4AE;
 }
 
 .flexmain {
@@ -69,13 +70,40 @@ body, html {
   background-color: #1b8800;
 }
 
+.random {
+  animation: colorchange 2s infinite;
+  -webkit-animation: colorchange 2s infinite;
+}
+.random:hover{
+
+}
+.random:active{
+  border: 5px solid black;
+}
+
+@keyframes colorchange {
+0%   {background-color: tomato;}
+25%  {background-color: #ff3d00;}
+50%  {background-color: #6ed162;}
+75%  {background-color: #3dbbe9;}
+100% {background-color: tomato;}
+}
+pers
+@-webkit-keyframes colorchange {
+  0%   {background-color: tomato;}
+  25%  {background-color: #ff3d00;}
+  50%  {background-color: #6ed162;}
+  75%  {background-color: #3dbbe9;}
+  100% {background-color: tomato;}
+}
+
 .pageinstruct{
   font-family: 'Roboto Slab';
   font-weight: 400;
   text-align: center;
-  margin: 15px 0 -10px 0;
+  margin: 25px 0 -10px 0;
   padding: 0;
-  color: #808080;
+  color: #ecf0f1;
 }
 
 button {

@@ -1,5 +1,6 @@
 body, html {
   box-sizing: border-box;
+  background-color: #512DA8;
 }
 
 .flexmain {
@@ -43,31 +44,25 @@ body, html {
 
 }
 .random {
-
+  animation: colorchange 5s infinite;
+  -webkit-animation: colorchange 5s infinite;
 }
 .random:hover{
-  animation: colorchange 5s infinite;
-  -webkit-animation: colorchange 5s infinite;
+
 }
 .random:active{
-  animation: colorchange 5s infinite;
-  -webkit-animation: colorchange 5s infinite;
+
 }
 
 @keyframes colorchange {
-0%   {background-color: tomato;}
-25%  {background-color: #ff3d00;}
-50%  {background-color: #6ed162;}
-75%  {background-color: #3dbbe9;}
-100% {background-color: tomato;}
+0%   {font-size:6vmin; }
+50% {font-size:9vmin; }
+100% {font-size:6vmin; }
 }
-pers
 @-webkit-keyframes colorchange {
-  0%   {background-color: tomato;}
-  25%  {background-color: #ff3d00;}
-  50%  {background-color: #6ed162;}
-  75%  {background-color: #3dbbe9;}
-  100% {background-color: tomato;}
+0%   {font-size:6vmin; }
+50% {font-size:9vmin; }
+100% {font-size:6vmin; }
 }
 
 .pageinstruct {
@@ -76,7 +71,7 @@ pers
   text-align: center;
   margin: 15px 0 -10px 0;
   padding: 0;
-  color: #808080;
+  color: #ecf0f1;
 }
 
 

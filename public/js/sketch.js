@@ -22,7 +22,7 @@ function draw(){ //this happening 30fps
   if(mouseIsPressed || touchIsDown){
     line(mouseX,mouseY, pmouseX, pmouseY)
 
-      console.log(mouseX + ',' + mouseY + "," + pmouseX + "," + pmouseY);
+      // console.log(mouseX + ',' + mouseY + "," + pmouseX + "," + pmouseY);
       var dataToSend = {
         x: mouseX,
         y: mouseY,
@@ -33,6 +33,6 @@ function draw(){ //this happening 30fps
   }
 }
 $('.save').click(function(){
-  console.log("Screen Saved");
+  // console.log("Screen Saved");
 socket.emit('saveCanvasScreen', "Screen Saved")
 })
