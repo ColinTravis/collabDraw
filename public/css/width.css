@@ -1,0 +1,96 @@
+body, html {
+  box-sizing: border-box;
+}
+
+.flexmain {
+    display: flex;
+    /*border: 1px green solid;*/
+    min-height: 99vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.flexbody {
+  display: flex;
+  /*border: 2px blue solid;*/
+  height: 100vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.width {
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+}
+
+.small {
+
+}
+
+.medium {
+
+}
+
+.large {
+
+}
+
+.huge {
+
+}
+.random {
+
+}
+.random:hover{
+  animation: colorchange 5s infinite;
+  -webkit-animation: colorchange 5s infinite;
+}
+.random:active{
+  animation: colorchange 5s infinite;
+  -webkit-animation: colorchange 5s infinite;
+}
+
+@keyframes colorchange {
+0%   {background-color: tomato;}
+25%  {background-color: #ff3d00;}
+50%  {background-color: #6ed162;}
+75%  {background-color: #3dbbe9;}
+100% {background-color: tomato;}
+}
+
+@-webkit-keyframes colorchange {
+  0%   {background-color: tomato;}
+  25%  {background-color: #ff3d00;}
+  50%  {background-color: #6ed162;}
+  75%  {background-color: #3dbbe9;}
+  100% {background-color: tomato;}
+}
+
+button {
+  background-color: #323232;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  width: 150px;
+  height: 150px;
+}
+button:hover {
+  background-color: #1a1919;
+}
+button:active {
+  background-color: #000000;
+}

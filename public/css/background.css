@@ -1,0 +1,108 @@
+body, html {
+  box-sizing: border-box;
+}
+
+.flexmain {
+    display: flex;
+    /*border: 1px green solid;*/
+    min-height: 99vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.flexbody {
+  display: flex;
+  /*border: 2px blue solid;*/
+  height: 70vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.backgroundcolors {
+  /*border: 2px blue solid;*/
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+}
+
+.gray {
+  background-color: #505050;
+}
+.gray:hover {
+  background-color: #363636;
+}
+.gray:active {
+  background-color: #1d1d1d;
+}
+
+.black {
+  background-color: #000;
+}
+.black:hover {
+  background-color: #202020;
+}
+.black:active {
+  background-color: #101010;
+}
+
+.white {
+  background-color: #fff;
+  border: 2px solid #505050;
+}
+.white:hover {
+  background-color: #d6d6d6;
+}
+.white:active {
+  background-color: #bebebe;
+}
+
+.blue {
+  background-color: #3f51b5;
+}
+.blue:hover {
+  background-color: #6779db;
+}
+.blue:active {
+  background-color: #2a3881;
+}
+
+.yellow {
+  background-color: #ffeb3b;
+}
+.yellow:hover {
+  background-color: #e0ca00;
+}
+.yellow:active {
+  background-color: #beae25;
+}
+.red {
+  background-color: #ff5252;
+}
+.red:hover{
+  background-color: #f40000;
+}
+.red:active {
+  background-color: #c43434;
+}
+
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 40pt;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+}
