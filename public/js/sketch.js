@@ -10,6 +10,8 @@ document.body.addEventListener("touchmove" , defaultPrevent);
 
 // ======= ALL P5 STUFF ==========
 
+var gate = false;
+
 function setup(){ // once at load
   createCanvas(windowWidth,windowHeight)
 }
@@ -18,10 +20,10 @@ function setup(){ // once at load
 function draw(){ //this happening 30fps
   strokeWeight(1);
   stroke(0,0,0)
-
-  if(mouseIsPressed || touchIsDown){
-    line(mouseX,mouseY, pmouseX, pmouseY)
-
+  // console.log(gate);
+  if( mouseIsPressed || touchIsDown){
+    if(gate == true){
+      line(mouseX,mouseY,pmouseX,pmouseY)
       // console.log(mouseX + ',' + mouseY + "," + pmouseX + "," + pmouseY);
       var dataToSend = {
         x: mouseX,
@@ -29,10 +31,24 @@ function draw(){ //this happening 30fps
         px: pmouseX,
         py: pmouseY
       }
-  socket.emit('clientDraw', dataToSend)
+    socket.emit('clientDraw', dataToSend)
+    }
+    gate = true;
   }
 }
+
+function touchEnded(){
+  gate = false;
+}
+
 $('.save').click(function(){
   // console.log("Screen Saved");
 socket.emit('saveCanvasScreen', "Screen Saved")
+})
+
+socket.on('setClearScreen', function(data) {
+  // console.log(data);
+  clear()
+  $('canvas').css("background-color","#505050");
+
 })
