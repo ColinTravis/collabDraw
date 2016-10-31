@@ -15,6 +15,7 @@ var gate = false;
 function setup(){ // once at load
   createCanvas(windowWidth,windowHeight)
 }
+$('.pageinstruct').delay(5000).fadeOut('medium');
 
 
 function draw(){ //this happening 30fps

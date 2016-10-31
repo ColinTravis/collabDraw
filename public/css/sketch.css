@@ -11,6 +11,15 @@ body, html {
   padding: 0;
   text-align: center;
 }
+.pageinstruct {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  text-align: center;
+  margin: 15px 0 -10px 0;
+  padding: 0;
+  color: #323232;
+}
+
 
 button {
   border: none;
