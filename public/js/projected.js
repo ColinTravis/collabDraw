@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  socket = io.connect('http://192.168.1.7:3000');
+  socket = io.connect('http://150.253.88.129:3000');
   // make a named event called 'mouse' and write an
   // anonymous callback function
   socket.on('projectedDrawing',
@@ -10,6 +10,8 @@ function setup() {
       line(data.x, data.y, data.px, data.py);
     }
   );
+
+  //======= STROKE COLOR =========
 
   socket.on('changeToGreen', function(data) {
     console.log(data);
@@ -27,6 +29,9 @@ function setup() {
     console.log(data);
     stroke(234, 241, 105)
   })
+
+  //======= STROKE WIDTH =========
+
   socket.on('setStrokeSmall', function(data) {
     console.log(data);
     strokeWeight(1);
@@ -47,57 +52,43 @@ function setup() {
     console.log(data);
     strokeWeight(random(1,30));
   })
-  socket.on('setBackgroundBlack', function(data) {
-    console.log(data);
-    strokeWeight(random(1,30));
-  })
-  socket.on('setStrokeRandom', function(data) {
-    console.log(data);
-    strokeWeight(random(1,30));
-  })
-  socket.on('setStrokeRandom', function(data) {
-    console.log(data);
-    strokeWeight(random(1,30));
-  })
-  socket.on('setStrokeRandom', function(data) {
-    console.log(data);
-    strokeWeight(random(1,30));
-  })
-  socket.on('setStrokeRandom', function(data) {
-    console.log(data);
-    strokeWeight(random(1,30));
-  })
+
+  //======= BACKGROUND COLOR =========
   socket.on('setBackgroundRed', function(data) {
     console.log(data);
-    background('#ff5252');
-  })
+    $('canvas').css("background-color","#ff5252");
 
+  })
   socket.on('setBackgroundBlack', function(data){
     console.log(data);
-    background('#000000');
+    $('canvas').css("background-color","#000000");
   })
   socket.on('setBackgroundWhite', function(data){
     console.log(data);
-    background('#ffffff');
+    $('canvas').css("background-color","#ffffff");
   })
   socket.on('setBackgroundGray', function(data){
     console.log(data);
-    background('#505050');
+    $('canvas').css("background-color","#505050");
   })
   socket.on('setBackgroundBlue', function(data){
     console.log(data);
-    background('#3f51b5');
+    $('canvas').css("background-color","#3f51b5");
   })
   socket.on('setBackgroundYellow', function(data){
     console.log(data);
-    background('#ffeb3b');
+    $('canvas').css("background-color","#ffeb3b");
   })
 
+//======= CLEAR SCREEN ======
   socket.on('setClearScreen', function(data) {
     console.log(data);
     clear()
+    $('canvas').css("background-color","#505050");
+
   })
 
+//======= SAVE SCREEN ======
   socket.on('saveScreen', function(data) {
     console.log(data);
     saveCanvas('myCanvas', 'jpg');

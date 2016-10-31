@@ -40,6 +40,15 @@ body, html {
     background-color: #690202;
 }
 
+.pageinstruct{
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  text-align: center;
+  margin: 15px 0 -10px 0;
+  padding: 0;
+  color: #808080;
+}
+
 button {
     border: none;
     color: white;
@@ -47,13 +56,13 @@ button {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 80pt;
+    font-size: 10vw;
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
     border-radius: 10px;
     cursor: pointer;
     outline: none;
-    width: 550px;
-    height: 550px;
+    width: 40vw;
+    height: 40vw;
 }

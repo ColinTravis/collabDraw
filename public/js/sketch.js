@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.1.7:3000');
+var socket = io.connect('http://150.253.88.129:3000');
 
 // ======= TURN OFF TOUCH SCROLLING ========
 

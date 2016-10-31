@@ -15,8 +15,7 @@ body, html {
 .flexbody {
   display: flex;
   /*border: 2px blue solid;*/
-  height: 100vh;
-  width: 50%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -62,7 +61,7 @@ body, html {
 75%  {background-color: #3dbbe9;}
 100% {background-color: tomato;}
 }
-
+pers
 @-webkit-keyframes colorchange {
   0%   {background-color: tomato;}
   25%  {background-color: #ff3d00;}
@@ -71,6 +70,16 @@ body, html {
   100% {background-color: tomato;}
 }
 
+.pageinstruct {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  text-align: center;
+  margin: 15px 0 -10px 0;
+  padding: 0;
+  color: #808080;
+}
+
+
 button {
   background-color: #323232;
   border: none;
@@ -78,15 +87,15 @@ button {
   text-align: center;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 20pt;
+  font-weight: 300;
+  font-size: 6vmin;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
-  width: 150px;
-  height: 150px;
+  width:  40vmin;
+  height: 40vmin;
 }
 button:hover {
   background-color: #1a1919;

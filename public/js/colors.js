@@ -1,7 +1,9 @@
-var socket = io.connect('http://192.168.1.7:3000');
+var socket = io.connect('http://150.253.88.129:3000');
 socket.on('connect', function(data){ //on connect, runs this function
   console.log("connected" + " id# " + socket.id); //socket API call to give user id
 })
+
+$('.pageinstruct').delay(5000).fadeOut('medium');
 
 
     $('.blue').click(function(){
