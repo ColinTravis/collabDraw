@@ -43,6 +43,7 @@ io.on('connect', function(socket){ //turn on socket on connect. If socket.io see
   })
 
 ```
+> Stuff
 
 ```javascript
   socket.on('colorGreen', function(sendGreen){
@@ -66,6 +67,7 @@ io.on('connect', function(socket){ //turn on socket on connect. If socket.io see
     io.emit('changeToRandom', sendRandom);
   })
 ```
+> Stuff
 
 ```javascript
   socket.on('widthSmall', function(sendSmall){
@@ -89,6 +91,7 @@ io.on('connect', function(socket){ //turn on socket on connect. If socket.io see
     io.emit('setStrokeRandom', sendRandom);
   })
 ```
+> Stuff
 
 ```javascript
   socket.on('backgroundBlack', function(sendBackBlack){
