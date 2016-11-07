@@ -1,6 +1,7 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  socket = io.connect('http://150.253.88.129:3000');
+  socket = io.connect();
+  // socket = io.connect('http://150.253.88.129:3000'); USE FOR LOCAL TESTING
   // make a named event called 'mouse' and write an
   // anonymous callback function
   socket.on('projectedDrawing',

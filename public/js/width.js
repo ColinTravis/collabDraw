@@ -1,4 +1,5 @@
-var socket = io.connect('http://150.253.88.129:3000');
+var socket = io.connect();
+// var socket = io.connect('http://150.253.88.129:3000'); USE FOR LOCAL TESTING
 socket.on('connect', function(data){ //on connect, runs this function
   // console.log("connected" + " id# " + socket.id); //socket API call to give user id
 })

@@ -1,4 +1,5 @@
-var socket = io.connect('http://150.253.88.129:3000');
+var socket = io.connect();
+// var socket = io.connect('http://150.253.88.129:3000'); USE FOR LOCAL TESTING
 
 // ======= TURN OFF TOUCH SCROLLING ========
 
