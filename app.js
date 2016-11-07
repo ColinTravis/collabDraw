@@ -2,10 +2,14 @@ var express = require('express') //we want to use express
 var app = express(); //starts express
 var server = require('http').Server( app ) // start a server instance on a port
 var io = require('socket.io')(server) //use socket.io for real time connections aka. wesockets
+var port = process.env.PORT || 8000
 
-server.listen(3000, function(){ // set up a server on port 3000, do a callback when it starts successfully
-  console.log("server started on 3000");
+server.listen(port, function(){ // set up a server on port 3000, do a callback when it starts successfully
+  console.log("App is runnin on port" + port);
 })
+// server.listen(3000, function(){ // set up a server on port 3000, do a callback when it starts successfully
+//   console.log("server started on 3000");
+// })
 
 app.use ( express.static('public') ) //serve out everything in the public folder
 

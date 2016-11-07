@@ -43,7 +43,7 @@ io.on('connect', function(socket){ //turn on socket on connect. If socket.io see
   })
 
 ```
-> Stuff
+> This function tells the server that on connection, to listen for the message 'projectedDrawing'
 
 ```javascript
   socket.on('colorGreen', function(sendGreen){
